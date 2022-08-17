@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form" class="container">
+      <input
+        type="text"
+        placeholder="0"
+        name="answer"
+        id="resaultInput"
+        readonly
+        class="resaultInput"
+      />
+
+      <div class="row">
+        <div class="column">
+          <input
+            type="button"
+            value="⬅"
+            style="background-color: rgb(36, 36, 36); color: whitesmoke"
+            onclick="form.answer.value=form.answer.value.slice(0,-1)"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="C"
+            style="background-color: rgb(234, 51, 51); color: whitesmoke"
+            onclick="form.answer.value=' '"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="/"
+            onclick="getButtonValue('/')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="*"
+            onclick="getButtonValue('*')"
+            class="button"
+          />
+        </div>
+
+        <div class="column">
+          <input
+            type="button"
+            value="1"
+            onclick="getButtonValue('1')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="2"
+            onclick="getButtonValue('2')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="3"
+            onclick="getButtonValue('3')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="+"
+            onclick="getButtonValue('+')"
+            class="button"
+          />
+        </div>
+        <div class="column">
+          <input
+            type="button"
+            value="4"
+            onclick="getButtonValue('4')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="5"
+            onclick="getButtonValue('5')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="6"
+            onclick="getButtonValue('6')"
+            class="button"
+          />
+          <input
+            type="button"
+            value="-"
+            onclick="getButtonValue('-')"
+            class="button"
+          />
+        </div>
+
+        <div class="column">
+          <input
+            type="button"
+            value="7"
+            onclick="getButtonValue('7')"
+            class="button"
+          />
+
+          <input
+            type="button"
+            value="8"
+            onclick="getButtonValue('8')"
+            class="button"
+          />
+          <input
+            type="button"
+            value="9"
+            onclick="getButtonValue('9')"
+            class="button"
+          />
+          <input
+            type="button"
+            value="="
+            onclick="getButtonValue('=')"
+            class="button"
+          />
+        </div>
+        <div class="column">
+          <input
+            type="button"
+            value="0"
+            style="width: 18.5vh"
+            onclick="getButtonValue('0')"
+            class="button"
+          />
+          <input
+            type="button"
+            value="."
+            onclick="getButtonValue('.')"
+            class="button"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+  <script src="./app.js"></script>
+</html>
