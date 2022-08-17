@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background-color: rgb(23, 23, 23);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.resaultInput {
+  padding: 13px 20px;
+  border-radius: 1px;
+  width: 80%;
+  direction: rtl;
+  font-size: 18px;
+  margin: 15px 0px;
+  outline: none;
+}
+
+.row {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 1px;
+  margin-bottom: 10px;
+  background: rgb(128, 197, 234);
+}
+.row .column {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+.row .column .button {
+  padding: 12px;
+  height: 45px;
+  cursor: pointer;
+  width: 50px;
+  border-radius: 1px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+}
